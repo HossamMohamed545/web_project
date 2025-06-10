@@ -1,0 +1,138 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+#header{
+    text-transform: uppercase;
+    text-align: center;
+    margin-top: 20px;
+}
+#project{
+    width: 75%;
+    margin: auto;
+}
+#title{
+    width: 100%;
+    margin: 15px 10px 5px 10px;
+    border: none;
+    background-color: rgb(71, 216, 167);
+    padding: 5px;
+    border-radius: 5px;
+}
+#price_row{
+    display: flex;
+    flex-direction:row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    
+}
+#price_row input,#total{
+    width :25%;
+    border: none;
+    background-color: rgb(71, 216, 167);
+    padding: 5px;
+    border-radius: 5px;
+    margin: 10px;
+}
+#total{
+    background-color: rgb(0, 255, 81);
+    font-weight: bold;
+}
+#total::before{
+    content: 'Total : ';
+}
+#count,#category,#create,#search{
+    width: 100%;
+    margin: 15px 10px 5px 10px;
+    border: none;
+    background-color: rgb(71, 216, 167);
+    padding: 5px;
+    border-radius: 5px;
+}
+#create,#Update{
+    cursor: pointer;
+    background-color: royalblue;
+    margin: 15px 0 5px 10px;
+    width: 101%;
+    border-radius: 10px;
+    padding:10px 5px ;
+    font-weight: bold;
+    color: white;
+}
+#SearchTitle,#SearchCategory{
+    cursor: pointer;
+    background-color: royalblue;
+    width: 47%;
+    margin: 15px 0 5px 10px;
+    border-radius: 10px;
+    padding:10px 5px ;
+    border: none;
+    font-weight: bold;
+    color: white;
+}
+#typeSearche{
+    display: flex;
+    width: 102%;
+    justify-content: space-between;
+    margin: auto;
+}
+#Delete_All{
+    cursor: pointer;
+    background-color: red;
+    width: 101%;
+    margin: 20px 10px 5px 10px;
+    border-radius: 10px;
+    padding:10px 5px ;
+    font-weight: bold;
+    color: white;   
+    border: none;
+}
+#Delete_All::after{
+    content: ' (5)';
+    color: rgb(255, 255, 255);
+}
+
+input:focus{
+    outline: none;
+    scale: 1.1;
+    transition: 1s;
+    
+}
+
+ #project button:hover,input:hover{
+    background-color: aqua;
+    scale: 1.1;
+    transition: 1s;
+}
+#table table tr th {
+    text-transform: uppercase;
+
+}
+#table table {
+    width: 100%;
+    padding: 0px;
+    margin: 10px 0 10px 10px    ;
+    border-collapse: collapse;
+}
+ th {
+    border-width: 1px 0 1px 0;
+    border-style:groove;
+    border-color: rgb(56, 53, 53);   
+}
+#table table thead{
+    background-color: rgb(25, 0, 255);
+    color: white;
+    font-weight: bold;
+}
+#table table tbody tr {
+    height: 30px;
+}
+#update,#delete{
+    cursor: pointer;
+    background-color:  rgb(25, 0, 255);
+    color: white;;
+    border: none;
+    border-radius: 15px;
+    padding: 4px 10px 4px 10px;
+}
